@@ -15,6 +15,7 @@ spec:
       containers:
       - name: sai-cicd-app
         image: sai-cicd-app:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 5000
 
