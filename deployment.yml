@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sai-cicd-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sai-cicd-app
+  template:
+    metadata:
+      labels:
+        app: sai-cicd-app
+    spec:
+      containers:
+      - name: sai-cicd-app
+        image: sai-cicd-app:latest
+        ports:
+        - containerPort: 5000
+
