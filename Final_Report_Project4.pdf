@@ -1,0 +1,70 @@
+📄 Project Report: CI/CD Pipeline with GitHub Actions & Docker
+Name: Donakonda Sai Krishna Date: September 2025 Project Title: Automating CI/CD for Containerized Applications using GitHub Actions and Docker
+
+1. Introduction
+In today’s fast-paced software development landscape, Continuous Integration and Continuous Deployment (CI/CD) pipelines are essential for delivering reliable and scalable applications. This project focuses on building a CI/CD pipeline using GitHub Actions to automate the testing, containerization, and deployment of a Python-based web application. The goal was to simulate a real-world DevOps workflow and deploy the application locally using Minikube.
+
+2. Objectives
+Automate code testing and container builds using GitHub Actions
+
+Push Docker images to Docker Hub securely
+
+Deploy the containerized application locally using Minikube
+
+Demonstrate end-to-end CI/CD workflow
+
+3. Tools & Technologies
+GitHub Actions: For CI/CD automation
+
+Docker & Docker Hub: For containerization and image hosting
+
+Minikube: For local Kubernetes deployment
+
+Python & Flask: For building the web application
+
+Pytest: For unit testing
+
+4. Implementation
+Developed a simple Flask app with a health check endpoint and unit tests
+
+Created a Dockerfile to containerize the app
+
+Configured GitHub Actions workflow (main.yml) to:
+
+Checkout code
+
+Run tests
+
+Build Docker image
+
+Push image to Docker Hub
+
+Set up Minikube locally and deployed the container using kubectl
+
+Verified deployment using browser and terminal logs
+
+5. Challenges
+Managing GitHub Secrets securely for Docker Hub credentials
+
+Ensuring compatibility between Docker image and Minikube’s runtime
+
+Debugging YAML syntax errors in GitHub Actions workflow
+
+6. Results
+Successfully implemented a CI/CD pipeline with automated testing and deployment
+
+Docker image was built and pushed to Docker Hub
+
+Application was deployed and verified on Minikube
+
+Screenshots and logs were captured for documentation
+
+7. Learnings
+Gained hands-on experience with GitHub Actions and Docker
+
+Understood the importance of automation in modern DevOps workflows
+
+Learned how to troubleshoot CI/CD failures and deployment issues
+
+8. Conclusion
+This project provided a comprehensive understanding of CI/CD pipelines and containerized deployments. It reinforced the value of automation in reducing manual errors and accelerating software delivery. The skills acquired here are directly applicable to real-world DevOps roles.
